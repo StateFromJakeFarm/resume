@@ -1,0 +1,154 @@
+% DISCLAIMER: adapted from https://github.com/sb2nov/resume
+
+% Authors: Sourabh Bajaj & Jake Hansen
+% License: MIT
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubHeading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{1pt}}
+
+\newcommand{\closeBullet}[1]{\item{#1}\vspace{-8pt}}
+
+% START RESUME
+\begin{document}
+\vspace*{\fill}
+
+% Heading
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Jake Hansen} & Email : \href{mailto:jhansen44@mail.csuchico.edu}{jhansen44@mail.csuchico.edu}\\
+  \href{https://github.com/StateFromJakeFarm}{https://github.com/StateFromJakeFarm} & Mobile : +1-123-456-7890 \\
+\end{tabular*}
+
+% Interests
+\section{Interests}
+  \resumeItemListStart
+    \closeBullet{Competitive programming}
+    \closeBullet{Deep learning}
+    \closeBullet{Audio and Music synthesis}
+    \closeBullet{Python}
+  \resumeItemListEnd
+
+% Skills
+\section{Skills}
+  \resumeItemListStart
+    \closeBullet {
+        \textbf{Languages:}{ C++, Python3, TCL}
+    }
+    \closeBullet {
+        \textbf{Frameworks/Libraries:}{ TensorFlow, Scrapy, Django}
+    }
+    \closeBullet {
+        \textbf{Additional Technologies:}{ Docker, SGE}
+    }
+  \resumeItemListEnd
+
+% Education
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubHeading
+      {California State University, Chico}{Chico, CA}
+      {Bachelor of Science in Computer Science (Spring 2019);  GPA: 3.67}{Aug. 2015 -- Present}
+  \resumeSubHeadingListEnd
+
+% Experience
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubHeading
+      {Hewlett Packard Enterprise}{Roseville, CA}
+      {Network Test Automation Intern}{June 2016 -- Aug. 2018}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained an internal network equipment testing tool}
+        \resumeItem{Created script to automatically power-down unused equipment within an on-site lab to reduce power consumption}
+        \resumeItem{Wrote scripts using TCL and Python to monitor statuses of NFS mounts utilized by developer workstations}
+        \resumeItem{Onboarded and mentored 3 high school interns}
+      \resumeItemListEnd
+
+    \resumeSubHeading
+      {CSU, Chico Research Foundation}{Chico, CA}
+      {Deep Learning Research Assistant}{Dec. 2017 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built Python web scraper with Google Cloud Storage and Google Sheets integration for improved usability}
+        \resumeItem{Building recurrent deep learning models using the TensorFlow library to categorize various ambient sounds}
+      \resumeItemListEnd
+
+    \resumeSubHeading
+      {Computer Science Deptartment}{Chico, CA}
+      {Student Teaching Assistant}{Aug. 2018 -- Present}
+      \resumeItemListStart
+        \resumeItem{Assisting students in upper-division course covering algorithms and data structures}
+        \resumeItem{Debugging with and instructing students during lab section and office hours}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Extracurriculars
+\section{Extracurricular Experience}
+  \resumeSubHeadingListStart
+    \resumeSubHeading
+      {Association for Computer Machinery (ACM)}{}
+      {Chapter President}{June 2017 -- Present}
+      \resumeItemListStart
+        \resumeItem{Organizes CSU Chico's participation in the annual Pacific Northwest ICPC Regional Competition}
+        \resumeItem{Leads weekly club meetings to help members improve programming and problem-solving skills}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% END RESUME
+\vspace*{\fill}
+\end{document}
